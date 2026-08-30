@@ -31,8 +31,8 @@ if sys.stderr and sys.stderr.encoding and sys.stderr.encoding.lower() != "utf-8"
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parent
-# MediaCrawler 与本仓库同级；也可用环境变量 MEDIACRAWLER_DIR 指定其绝对路径
-MEDIA = Path(os.environ.get("MEDIACRAWLER_DIR") or (ROOT.parent / "MediaCrawler"))
+# MediaCrawler 作为子目录内置；也可用环境变量 MEDIACRAWLER_DIR 指定别处的绝对路径
+MEDIA = Path(os.environ.get("MEDIACRAWLER_DIR") or (ROOT / "MediaCrawler"))
 DB_PATH = str(ROOT / "data" / "weibo.db")
 
 # 抓取口径：目标=事件链路，尽量全、别漏大影响力帖子
