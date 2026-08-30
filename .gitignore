@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 采集产物（数据/日志/登录态，不入库）
+data/
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.err
+browser_data/
+
+# 秘密 / 本地配置
+.env
+*.local
+
+# 系统
+.DS_Store
+Thumbs.db
