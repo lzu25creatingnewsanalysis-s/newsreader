@@ -1,8 +1,16 @@
 ## 使用
+克隆仓库到本地
+```bash
+git clone https://github.com/yellowbutton/newsreader.git
+```
 依赖 [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)
 ```bash
 git clone https://github.com/NanmiCoder/MediaCrawler MediaCrawler
 cd MediaCrawler && pip install -r requirements.txt && playwright install
+```
+回到newsreader文件夹
+```bash
+cd ..
 ```
 采集会自动使用本机的 Chrome 或 Edge。
 首次扫码登录：
